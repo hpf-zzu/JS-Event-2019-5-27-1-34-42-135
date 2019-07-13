@@ -24,6 +24,14 @@
   <script>
      // write your code here 
      // ......
+      var list = document.getElementById('no');
+	  list.addEventListener('click',function(event){
+			event = event || window.event;
+		  	var target = event.target || event.srcElement;
+		  	alert(target.innerHTML);
+							
+	  },false
+	  );
   </script>
   </body>
   </html>
